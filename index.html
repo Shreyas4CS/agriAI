@@ -543,12 +543,12 @@ table.dt tbody tr{animation:rowSlideIn .3s ease both;}
     <span>by</span>
     <img id="land-logo" src="" alt="CognoSpace">
   </div>
-  <p class="land-tagline">Teach machines to care for plants! Explore Supervised &amp; Unsupervised Learning through a real AI-powered irrigation system — with live ESP32 sensor data.</p>
+  <p class="land-tagline">Teach machines to care for plants! Explore Supervised &amp; Unsupervised Learning through a real AI-powered irrigation system — with live Coggy sensor data.</p>
   <button class="btn-start" onclick="openModal('modal-start')">🚀 Let's Get Started</button>
   <div class="chips">
     <div class="chip">🧠 Supervised Learning</div>
     <div class="chip">🔍 Unsupervised Learning</div>
-    <div class="chip">📡 Live ESP32 Sensors</div>
+    <div class="chip">📡 Live Coggy Sensors</div>
     <div class="chip">💧 Smart Irrigation AI</div>
   </div>
 </div>
@@ -686,7 +686,7 @@ table.dt tbody tr{animation:rowSlideIn .3s ease both;}
       <div class="footer-col">
         <h4>Hardware</h4>
         <ul>
-          <li>⚡ ESP32 Microcontroller</li>
+          <li>⚡ CognoSpace Coggy</li>
           <li>🌡️ DHT-11 (Temp &amp; Humidity)</li>
           <li>🌧️ Rain Sensor (Digital)</li>
           <li>🌱 Soil Moisture (Digital)</li>
@@ -935,7 +935,7 @@ function setBLE(state){
     dot.className='ble-dot linking'; lbl.textContent='Connecting…';
   } else {
     bleConnected=false; bleMotorChar=null; dot.className='ble-dot'; lbl.textContent='Not Connected';
-    btn.innerHTML='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.71 7.71L12 2h-1v7.59L6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 11 14.41V22h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 5.83l1.88 1.88L13 9.59V5.83zm1.88 10.46L13 18.17v-3.76l1.88 1.88z"/></svg>Connect ESP32';
+    btn.innerHTML='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.71 7.71L12 2h-1v7.59L6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 11 14.41V22h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 5.83l1.88 1.88L13 9.59V5.83zm1.88 10.46L13 18.17v-3.76l1.88 1.88z"/></svg>Connect coggy';
     if(badge) badge.style.display='none';
 
     // Never keep displaying old sensor values after the ESP32 disconnects.
